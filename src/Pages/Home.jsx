@@ -1,12 +1,34 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import img1 from "../assets/homeimage3.jpg";
 import logo1 from "../assets/logo.png";
+=======
+import React from 'react'
+import img1 from "../assets/health.png"
+import logo1 from "../assets/logo.png"
+import icon1 from "../assets/icons8-admin-50.png"
+import image from "../assets/background.jpg"
+import img2 from "../assets/home_page.jpg"
+>>>>>>> 270bfdc374b8aea2385609e8cbc9ab3ac3d8c8dd
 
 
 import Navbar from "../Components/Navbar";
 
 const Home = () => {
+<<<<<<< HEAD
  
+=======
+  return (
+   <div className="w-full">
+  <img
+    src={img2}
+    alt="Hospital Banner"
+    className="w-full h-auto block"
+  />
+</div>
+  ) 
+}
+>>>>>>> 270bfdc374b8aea2385609e8cbc9ab3ac3d8c8dd
 
   return (
     <div className="relative h-screen w-full bg-white overflow-auto">
