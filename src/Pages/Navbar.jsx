@@ -35,66 +35,36 @@ const Navbar = () => {
       color: "text-red-400 hover:text-white",
       role: "receptionist",
     },
-    {
-      label: "Room & Beds",
-      icon: ClipboardList,
-      color: "text-black",
-      role: "room-beds",
-    },
-    {
-      label: "Appointments",
-      icon: ClipboardList,
-      color: "text-black",
-      role: "appointments",
-    },
+
+ 
     {
       label: "Billing & Payments",
       icon: ClipboardList,
       color: "text-black",
       role: "billing",
     },
-    {
-      label: "Reports",
-      icon: ClipboardList,
-      color: "text-black",
-      role: "reports",
-    },
+  
     {
       label: "Labrotary",
       icon: ClipboardList,
       color: "text-black",
       role: "Labrotary",
     },
-    // {
-    //   label: "Complaints",
-    //   icon: ClipboardList,
-    //   color: "text-black",
-    //   role: "complaints",
-    // },
-    // {
-    //   label: "Inventory",
-    //   icon: ClipboardList,
-    //   color: "text-black",
-    //   role: "inventory",
-    // },
-    // {
-    //   label: "Shift & Schedule",
-    //   icon: ClipboardList,
-    //   color: "text-black",
-    //   role: "shift-schedule",
-    // },
+   
+    {
+      label: "Inventory",
+      icon: ClipboardList,
+      color: "text-black",
+      role: "Inventory",
+    },
+ 
     {
       label: "Emergency Alert",
       icon: AlertTriangle,
       color: "text-red-500 hover:text-white",
       role: "Emergency-Alert",
     },
-    // {
-    //   label: "Attendance",
-    //   icon: ClipboardList,
-    //   color: "text-black",
-    //   role: "attendance",
-    // },
+   
   ];
 
   return (
@@ -153,8 +123,10 @@ const Navbar = () => {
             >
               Login
             </button>
-            <button className="bg-[#0F766E] text-white w-full h-[45px] rounded-xl text-base font-semibold px-4
-">
+            <button
+              className="bg-[#0F766E] text-white w-full h-[45px] rounded-xl text-base font-semibold px-4
+"
+            >
               Register
             </button>
           </div>
@@ -191,9 +163,8 @@ const Navbar = () => {
         </div>
       )}
 
-
-        {showSidebar && (
-        <div className="absolute top-1 right-1 h-[85vh] w-72 bg-gradient-to-bl from-emerald-700 via-teal-500 to-white text-black flex flex-col p-6 shadow-2xl rounded-2xl border border-blue-300 z-50 transition-all duration-300 ease-in-out">
+      {showSidebar && (
+        <div className="absolute top-1 right-1 h-[85vh] overflow-y-auto w-72 bg-gradient-to-bl from-emerald-700 via-teal-500 to-white text-black flex flex-col p-6 shadow-2xl rounded-2xl border border-blue-300 z-50 transition-all duration-300 ease-in-out">
           {/* Close Button */}
           <div className="flex justify-end mb-2">
             <button
@@ -212,7 +183,10 @@ const Navbar = () => {
             {roles.map((role, index) => (
               <button
                 key={index}
-                onClick={() => navigate(`/login/${role.role}`)}
+                onClick={() => {
+                  navigate(`/login/${role.role}`);
+                  setShowSidebar(false);
+                }}
                 className={`flex items-center gap-4 px-4 py-3 rounded-xl bg-white hover:bg-gradient-to-r hover:from-cyan-500 hover:to-emerald-400 text-white hover:text-black transition-all duration-300 shadow-md ${role.color}`}
               >
                 <role.icon
@@ -227,7 +201,6 @@ const Navbar = () => {
           </div>
         </div>
       )}
-
     </div>
   );
 };

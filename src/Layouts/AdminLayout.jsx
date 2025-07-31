@@ -6,7 +6,7 @@ import Header from "../Components/Header";
 function AdminLayout({ children }) {
   return (
     <div className="flex h-screen gap-5 p-3">
-      <div className="w-[15%]  bg-[#0F766E] rounded-2xl shadow-lg ">
+      <div className="w-[15%]  bg-[#0F766E] rounded-2xl shadow-lg overflow-y-auto">
         <Sidebar sidebarItems={adminMenu} />
       </div>
 

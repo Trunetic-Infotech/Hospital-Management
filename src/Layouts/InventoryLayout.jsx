@@ -1,7 +1,8 @@
-import { Sidebar } from 'lucide-react'
+
 import React from 'react'
 import Header from '../Components/Header'
 import { InventoryMenu } from '../constants/SidebarMenu'
+import Sidebar from '../Components/Sidebar'
 
 function InventoryLayout({children}) {
   return (

@@ -27,7 +27,7 @@ function RoomsAndBeds() {
       img: door,
       ward: "icu",
       roomno: 101,
-      floor: 101,
+      floor: 1,
       status: "available",
       critical: "$800",
       totalbed: 4,
@@ -38,7 +38,7 @@ function RoomsAndBeds() {
       img: door,
       ward: "icu",
       roomno: 101,
-      floor: 101,
+      floor: 2,
       status: "available",
       critical: "$800",
       totalbed: 4,
@@ -49,7 +49,7 @@ function RoomsAndBeds() {
       img: door,
       ward: "icu",
       roomno: 101,
-      floor: 101,
+      floor: 3,
       status: "available",
       critical: "$800",
       totalbed: 4,
@@ -125,7 +125,7 @@ function RoomsAndBeds() {
 
                 <select
                   name="status"
-                  className="w-full bg-transparent text-gray-700 placeholder:text-base outline-none appearance-none pr-6"
+                  className="w-full  text-gray-700 placeholder:text-base outline-none  pr-6"
                 >
                   <option value="">All Floors</option>
                   <option value="active">Floor 1</option>
@@ -144,7 +144,7 @@ function RoomsAndBeds() {
 
                 <select
                   name="status"
-                  className="w-full bg-transparent text-gray-700 placeholder:text-base outline-none appearance-none pr-6"
+                  className="w-full bg-transparent text-gray-700 placeholder:text-base outline-none  pr-6"
                 >
                   <option value="">All Types</option>
                   <option value="active">Floor 1</option>
@@ -163,7 +163,7 @@ function RoomsAndBeds() {
 
                 <select
                   name="status"
-                  className="w-full bg-transparent text-gray-700 placeholder:text-base outline-none appearance-none pr-6"
+                  className="w-full bg-transparent text-gray-700 placeholder:text-base outline-none pr-6"
                 >
                   <option value="">status</option>
                   <option value="active">Floor 1</option>

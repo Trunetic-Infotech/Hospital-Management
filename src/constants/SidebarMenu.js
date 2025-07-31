@@ -44,15 +44,15 @@ export const adminMenu = [
   { label: "Reports", icon: FileText, path: "/admin/reports" },
   { label: "Complaints", icon: Megaphone, path: "/admin/complaints" },
   { label: "Inventory", icon: Boxes, path: "/admin/inventory" },
-  // {
-  //   label: "Shifts and Schedules",
-  //   icon: Clock,
-  //   path: "/admin/shiftsandschedules",
-  // },
-  // { label: "Emergency Alerts", icon: AlarmCheck },
+  {
+    label: "Shifts and Schedules",
+    icon: Clock,
+    path: "/admin/shiftsandschedules",
+  },
+  { label: "Emergency Alerts", icon: AlarmCheck, path:"/admin/emergencyalerts" },
 
-  // { label: "Attendance", icon: ClipboardList },
-  // { label: "Mortuary Records", icon: BookOpenCheck },
+  { label: "Attendance", icon: ClipboardList, path:"/admin/attendance" },
+  { label: "Mortuary Records", icon: BookOpenCheck, path:"/admin/mortuaryrecords" },
 ];
 
 export const doctorMenu = [
@@ -110,12 +110,11 @@ export const LabrotaryMenu = [
 
 export const InventoryMenu = [
   { label: "Home", icon: HomeIcon, path: "/inventory/dashboard" },
-   {
-    label: "Stock Usage",
-    icon: FlaskConical,
-    path: "/inventory/stockusage",
-  },
- 
+  // {
+  //   label: "Stock Usage",
+  //   icon: FlaskConical,
+  //   path: "/inventory/stockusage",
+  // },
 ];
 
 // export const adminMenu = [

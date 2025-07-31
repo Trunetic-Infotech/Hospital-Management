@@ -25,13 +25,13 @@ function Login() {
               if (role === "Doctor") {
                 navigate("/doctor/dashboard");
               }
-               if (role === "Emergency-Alert") {
+              if (role === "Emergency-Alert") {
                 navigate("/emergency/dashboard");
               }
-                if (role === "Labrotary") {
+              if (role === "Labrotary") {
                 navigate("/labrotary/dashboard");
               }
-                   if (role === "Inventory") {
+              if (role === "Inventory") {
                 navigate("/inventory/dashboard");
               }
 
@@ -65,8 +65,6 @@ function Login() {
             </div>
 
             <button
-          
-
               type="submit"
               className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
             >
