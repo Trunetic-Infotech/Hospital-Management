@@ -110,11 +110,14 @@ export const LabrotaryMenu = [
 
 export const InventoryMenu = [
   { label: "Home", icon: HomeIcon, path: "/inventory/dashboard" },
-  // {
-  //   label: "Stock Usage",
-  //   icon: FlaskConical,
-  //   path: "/inventory/stockusage",
-  // },
+   { label: "Medical Supplies", icon: HomeIcon, path: "/inventory/medicalsupplies" },
+    { label: "New Equipment Requests", icon: HomeIcon, path: "/inventory/newequipmentrequest" },
+     { label: "Pending Supplies", icon: HomeIcon, path: "/inventory/pendingsupplies" },
+  {
+    label: "Stock Usage",
+    icon: FlaskConical,
+    path: "/inventory/stockusage",
+  },
 ];
 
 // export const adminMenu = [
